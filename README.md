@@ -1,4 +1,4 @@
-## 展示武汉肺炎病患数据的Shell脚本
+# 展示武汉肺炎病患数据的Shell脚本
 
 ```
 $ ./main.sh
@@ -28,8 +28,8 @@ $ ./main.sh
 ......
 ```
 
-### 依赖
+## 依赖
 - [jq](https://stedolan.github.io/jq/)
 
-### 感谢
+## 感谢
 - [Anthonyeef/wuhan-virus-bitbar-plugin](https://github.com/Anthonyeef/wuhan-virus-bitbar-plugin)
