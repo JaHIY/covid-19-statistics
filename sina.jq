@@ -9,9 +9,9 @@ def epid_info(place; confirm_num; suspect_num; death_num; cure_num):
 .data.times,
 epid_info("全国"; .data.gntotal; .data.sustotal; .data.deathtotal; .data.curetotal),
 (
-    .data.list[]? | repeat(" "; 4)+epid_info(.name; .value; .susNum; .deathNum; .cureNum),
+    .data.list | map((.value, .susNum, .deathNum, .cureNum) |= tonumber) | sort_by(.value) | reverse | .[] | repeat(" "; 4)+epid_info(.name; .value; .susNum; .deathNum; .cureNum),
     (
-        .city[]? | repeat(" "; 8)+epid_info(.name; .conNum; .susNum; .deathNum; .cureNum)
+        .city | map((.conNum, .susNum, .deathNum, .cureNum) |= tonumber) | sort_by(.conNum) | reverse | .[] | repeat(" "; 8)+epid_info(.name; .conNum; .susNum; .deathNum; .cureNum)
     )
 )
 
