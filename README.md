@@ -1,4 +1,4 @@
-# 展示武汉肺炎病患数据的Shell脚本
+# 展示新冠肺炎病患数据的Shell脚本
 
 ```
 $ ./main.sh
@@ -30,4 +30,4 @@ $ ./main.sh
 - [jq](https://stedolan.github.io/jq/)
 
 ## 感谢
-- [Anthonyeef/wuhan-virus-bitbar-plugin](https://github.com/Anthonyeef/wuhan-virus-bitbar-plugin)
+- [Anthonyeef/covid-19-bitbar-plugin](https://github.com/Anthonyeef/covid-19-bitbar-plugin)
